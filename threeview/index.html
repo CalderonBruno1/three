@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Seleccionar arbol: <br></br>
+        <select  id="Lista" > 
+        <option value="0" hidden >Seleccionar</option>
+        <option value="1">Arbol #1</option>
+        <option value="2">Arbol #2</option>
+        <option value="3">Arbol #3</option>
+    </select>
+    </div>
+    <div id="LoadTree" >
+        <h1>Titulo del threeview</h1>
+        <ul > 
+            <li id="frontEnd" > 
+            <span  class="caret">Rama</span>
+            <ul  class="nested"  >
+                <li>hoja</li>
+                <li>hoja</li>
+            </ul>
+
+            </li>
+        </ul>
+        <ul>
+            <li id="frontEnd">
+            <span class="caret">Rama</span>
+            <ul class="nested">
+                <li>hoja</li>
+                <li>hoja</li>
+            </li>
+            </ul>
+        </ul>
+        <ul> 
+        
+            <li id="frontEnd">
+            <span class="caret">Rama</span>
+            <ul class="nested">
+                <li>hoja</li>
+                <li>hoja</li>
+            </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div  style=" border: 2px solid black; ">
+        <div class="section">
+           
+                <h1 style="font-size: x-large;">Datos:</h1>
+                <p id="datos"></p>
+
+      </div>
+    </div>
+
+    <button id="boton">GENERAR</button>
+  </div>
+</body>
+<script src="controladorAjax.js"></script>
+</html>
